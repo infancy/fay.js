@@ -1,1 +1,5 @@
-/.ignore
+.ignore/
+node_modules/
+engine/core
+engine/graphics
+engine/scene

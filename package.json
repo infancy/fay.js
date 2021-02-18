@@ -1,0 +1,33 @@
+{
+  "name": "fay",
+  "version": "0.0.1",
+  "description": "a graphlics library",
+  "main": "fay.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infancy/fay.js.git"
+  },
+  "keywords": [
+    "WebGL",
+    "WebGPU",
+    "WebAssembly"
+  ],
+  "author": "infancy (https://github.com/infancy)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/infancy/fay.js/issues"
+  },
+  "homepage": "https://github.com/infancy/fay.js#readme",
+
+  "devDependencies": {
+    "snowpack": "^3.0.11"
+  },
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  }
+}
