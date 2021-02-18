@@ -101,21 +101,6 @@ abstract class Mat4Base<T extends MatOperator<T>> extends MatOperator<T> {
     protected readonly col_ = 4
     protected readonly length_ = 16
 
-    constructor(
-        _00 = 0, _01 = 0, _02 = 0, _03 = 0,
-        _10 = 0, _11 = 0, _12 = 0, _13 = 0,
-        _20 = 0, _21 = 0, _22 = 0, _23 = 0,
-        _30 = 0, _31 = 0, _32 = 0, _33 = 0) {
-        super()
-
-        // this.arguments
-        this.init_([
-            _00, _01, _02, _03,
-            _10, _11, _12, _13,
-            _20, _21, _22, _23,
-            _30, _31, _32, _33
-        ])
-    }
     protected init_(values: number16_) {
         for(let i = 0; i < this.length_; ++i) {
             this.a_[i] = values[i]
@@ -144,6 +129,22 @@ export class mat4 extends Mat4Base<mat4> {
 
     static readonly zero     = new mat4()
     static readonly identity = new mat4(1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1)
+
+    constructor(
+        _00 = 0, _01 = 0, _02 = 0, _03 = 0,
+        _10 = 0, _11 = 0, _12 = 0, _13 = 0,
+        _20 = 0, _21 = 0, _22 = 0, _23 = 0,
+        _30 = 0, _31 = 0, _32 = 0, _33 = 0) {
+            
+        super()
+        // this.arguments
+        this.init_([
+            _00, _01, _02, _03,
+            _10, _11, _12, _13,
+            _20, _21, _22, _23,
+            _30, _31, _32, _33
+        ])
+    }
 
     create(numbers: []) { return new mat4(...numbers) }
     clone() { 
@@ -549,6 +550,22 @@ export class mat4i extends Mat4Base<mat4i> {
 
     static readonly zero    = new mat4i()
     static readonly identity = new mat4(1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1)
+
+    constructor(
+        _00 = 0, _01 = 0, _02 = 0, _03 = 0,
+        _10 = 0, _11 = 0, _12 = 0, _13 = 0,
+        _20 = 0, _21 = 0, _22 = 0, _23 = 0,
+        _30 = 0, _31 = 0, _32 = 0, _33 = 0) {
+            
+        super()
+        // this.arguments
+        this.init_([
+            _00, _01, _02, _03,
+            _10, _11, _12, _13,
+            _20, _21, _22, _23,
+            _30, _31, _32, _33
+        ])
+    }
 
     create(numbers: []) { return new mat4i(...numbers) }
     clone() { 

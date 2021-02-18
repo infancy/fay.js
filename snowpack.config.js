@@ -5,10 +5,9 @@
 module.exports = {
   mount: {
     /* ... */
-    index
   },
   plugins: [
-    /* ... */
+    '@snowpack/plugin-typescript',
   ],
   packageOptions: {
     /* ... */

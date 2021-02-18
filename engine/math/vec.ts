@@ -21,13 +21,6 @@ abstract class Vec2Accessor<T extends VecOperator<T>> extends VecOperator<T> {
     protected abstract a_ : TypedArray
     protected length_ = 2
 
-    constructor(x = 0, y = 0) {
-        super()
-
-        this.x = x
-        this.y = y
-    }
-
     get x() { return this.a_[0] }
     get y() { return this.a_[1] }
     set x(value) { this.a_[0] = value }
@@ -48,6 +41,12 @@ export class vec2 extends Vec2Accessor<vec2> {
     static readonly zero = new vec2(0, 0)
     static readonly one = new vec2(1, 1)
 
+    constructor(x = 0, y = 0) {
+        super()
+        this.x = x
+        this.y = y
+    }
+
     create(x = 0, y = 0) { return new vec2(x, y) }
     clone(){ return this.create(this.x, this.y) }
 
@@ -65,6 +64,12 @@ export class vec2i extends Vec2Accessor<vec2i> {
 
     static readonly zero = new vec2i(0, 0)
     static readonly one = new vec2i(1, 1)
+
+    constructor(x = 0, y = 0) {
+        super()
+        this.x = x
+        this.y = y
+    }
 
     create(x = 0, y = 0) { return new vec2i(x, y) }
     clone(){ return this.create(this.x, this.y) }
@@ -92,14 +97,6 @@ abstract class Vec3Accessor<T extends VecOperator<T>> extends VecOperator<T> {
     protected abstract a_ : TypedArray
     abstract create(x: number, y: number, z: number) : T
     protected length_ = 3
-
-    constructor(x = 0, y = 0, z = 0) {
-        super()
-
-        this.x = x
-        this.y = y
-        this.z = z
-    }
 
     get x() { return this.a_[0] }
     get y() { return this.a_[1] }
@@ -142,6 +139,13 @@ export class vec3 extends Vec3Accessor<vec3> {
     static readonly up      = new vec3(0, 1, 0)
     static readonly forward = new vec3(0, 0, 1)
 
+    constructor(x = 0, y = 0, z = 0) {
+        super()
+        this.x = x
+        this.y = y
+        this.z = z
+    }
+
     create(x = 0, y = 0, z = 0) { return new vec3(x, y, z) }
     clone(){ return this.create(this.x, this.y, this.z) }
 
@@ -162,6 +166,13 @@ export class vec3i extends Vec3Accessor<vec3i> {
     static readonly up      = new vec3(0, 1, 0)
     static readonly forward = new vec3(0, 0, 1)
 
+    constructor(x = 0, y = 0, z = 0) {
+        super()
+        this.x = x
+        this.y = y
+        this.z = z
+    }
+
     create(x = 0, y = 0, z = 0) { return new vec3i(x, y, z) }
     clone(){ return this.create(this.x, this.y, this.z) }
 
@@ -181,15 +192,6 @@ export class vec3i extends Vec3Accessor<vec3i> {
 abstract class Vec4Accessor<T extends VecOperator<T>> extends VecOperator<T> {
     protected abstract a_ : TypedArray
     protected length_ = 4
-
-    constructor(x = 0, y = 0, z = 0, w = 0) {
-        super()
-
-        this.x = x
-        this.y = y
-        this.z = z
-        this.w = w
-    }
 
     get x() { return this.a_[0] }
     get y() { return this.a_[1] }
@@ -216,6 +218,14 @@ export class vec4 extends Vec4Accessor<vec4> {
     static readonly zero    = new vec4(0, 0, 0, 0)
     static readonly one     = new vec4(1, 1, 1, 1)
 
+    constructor(x = 0, y = 0, z = 0, w = 0) {
+        super()
+        this.x = x
+        this.y = y
+        this.z = z
+        this.w = w
+    }
+
     create(x = 0, y = 0, z = 0, w = 0) { return new vec4(x, y, z, w) }
     clone(){ return this.create(this.x, this.y, this.z, this.w) }
 
@@ -231,6 +241,14 @@ export class vec4i extends Vec4Accessor<vec4i> {
 
     static readonly zero    = new vec4i(0, 0, 0, 0)
     static readonly one     = new vec4i(1, 1, 1, 1)
+
+    constructor(x = 0, y = 0, z = 0, w = 0) {
+        super()
+        this.x = x
+        this.y = y
+        this.z = z
+        this.w = w
+    }
 
     create(x = 0, y = 0, z = 0, w = 0) { return new vec4i(x, y, z, w) }
     clone(){ return this.create(this.x, this.y, this.z, this.w) }
