@@ -3,3 +3,13 @@ node_modules/
 engine/core
 engine/graphics
 engine/scene
+
+build/.git
+build/_snowpack
+build/test
+build/.gitignore
+build/package-lock.json
+build/package.json
+build/README.md
+build/snowpack.config.js
+build/tsconfig.json
