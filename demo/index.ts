@@ -1,8 +1,9 @@
 import * as fay from '../engine/index';
+import {vertex_index, texture_unifrom, camera, offscreen} from "./render"
 
-const canvas = document.getElementById('fay-canvas') as HTMLCanvasElement;
-canvas.width = 1080
-canvas.height = 640;
+let app = new vertex_index()
+app.run()
 
-const renderer = new fay.Renderer(canvas);
-renderer.start();
+
+
+
