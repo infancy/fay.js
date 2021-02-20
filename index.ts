@@ -1,3 +1,3 @@
-import { vec4 } from './engine/math/vec';
+import * as fay from './engine/index';
 
-confirm(new vec4().toString())
+confirm(new fay.vec4().toString())
