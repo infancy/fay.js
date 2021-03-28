@@ -1,3 +1,4 @@
+/*
 import * as fay from '../engine/index';
 import { Renderer } from '../engine/index';
 
@@ -51,3 +52,4 @@ export class offscreen extends fay.app {
         
     }
 }
+*/

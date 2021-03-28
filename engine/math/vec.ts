@@ -4,7 +4,7 @@ vec3.mul(model)
 */
 
 import {isEqual, notEqual} from "./math"
-import {VecOperator, TypedArray } from "./vecOperator_"
+import {VecOperator, TypedArray } from "./vec-operator_"
 /*
 interface vec_type_ {
 
@@ -226,6 +226,7 @@ export class vec4 extends Vec4Accessor<vec4> {
         this.w = w
     }
 
+    // TODO: static
     create(x = 0, y = 0, z = 0, w = 0) { return new vec4(x, y, z, w) }
     clone(){ return this.create(this.x, this.y, this.z, this.w) }
 

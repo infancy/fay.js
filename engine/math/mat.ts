@@ -5,7 +5,7 @@
 
 import {isEqual, toRadian} from "./math"
 import { vec2, vec3, vec4, number3, number4 } from "./vec"
-import { TypedArray } from "./vecOperator_"
+import { TypedArray } from "./vec-operator_"
 
 export abstract class MatOperator<T extends MatOperator<T>> {
     protected abstract a_ : TypedArray
