@@ -1,6 +1,6 @@
 
-export * from "./backend"
-export * from "./command"
+import {ERenderBackend, RenderDesc, RenderBackend} from "./backend_"
+export {ERenderCommand, RenderCommand, RenderCommandList} from "./command"
 export * from "./webgl/webgl"
 export * from "./webgpu/webgpu"
 
@@ -8,11 +8,19 @@ export * from "./webgpu/webgpu"
 export class RenderDevice {
     private backend_ : RenderDevice
 
-    constructor() {
+    constructor(canvasName: string) {
 
     }
 
 
+
+    private createRenderBackend(desc: RenderDesc) {
+        switch(desc.backend) {
+            case ERenderBackend.WebGL2:
+                this.backend_
+                break
+        }
+    }
 }
 
 

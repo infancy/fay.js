@@ -4,7 +4,7 @@ geometry related tools
 
 */
 
-import { Drawable, Renderable } from "../core/index"
+//import { Drawable, Renderable } from "../core/index"
 import { vec3 } from "./vec"
 
 export class Ray {

@@ -1,4 +1,4 @@
-import { RenderBuffer, RenderTexture, RenderShader, RenderPipeline, RenderFrame } from "./resource"
+import { BufferDesc, TextureDesc, ShaderDesc, PipelineDesc, FrameDesc } from "./resource"
 
 export enum ERenderCommand {
 
